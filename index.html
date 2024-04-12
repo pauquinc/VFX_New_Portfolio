@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Quintero Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://lottie.host/fe041abe-c24b-4513-86d6-beaebf0d53cd/4hPmMB5HLE.json"
+                background="#FFFFFF" speed="0.5" style="width: 10%; height: 10%" autoplay direction="1" count="2"
+                mode="normal"></lottie-player>
+
+            Paula Quintero
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <div class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Paula Quintero</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile.png" alt="Paula Quintero Profile Pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Paula Quintero</h1>
+            <p class="section__text__p2">Interactive Media Designer and Marketer</p>
+
+            <p class="section__text__p3">To me, the creative and design process is the way to express what's in one's
+                soul.
+                It is pouring one's self into building solutions that carry a message and change people's experiences.
+                The creative process is a collective journey where exploration, freedom and imagination take the wheel
+                to reach a common and meaningful destination.
+            </p>
+            <p class="section__text__p4">Welcome to my portfolio!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Portfolio.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/pauquinc/'">
+                <img src="./Assets/instagram.png" alt="My linkedin Profile" class="icon"
+                    onclick="location.href='https://www.instagram.com/pauquinc/'">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section>
+        <p class=section__text__p1>Demo</p>
+        <h1 class="title">Reel</h1>
+        <div class="hero">
+            <video autoplay muted loop>
+                <source src="./Assets/reel.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- This section to finish and add more info -->
+    <!-- <section id="about">
+<p class="section__text__p1">Get to know more</p>
+<h1 class="title">About me</h1>
+<div class="section-container">
+    <div class="section__pic-container">
+        <img
+        src="./Assets/about.png"
+        alt="Profile picture"
+        class= "about-pic"
+        />
+    </div>
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <img 
+                src="./Assets/experience.png" 
+                alt="experience icon" 
+                class="icon"
+                />
+                <h3>Experiencie</h3>
+                <p>2+ years<br>Marketing and Design</p>
+            </div>
+            <div class="details-container">
+                <img 
+                src="./Assets/education.png" 
+                alt="education icon" 
+                class="icon"
+                />
+
+            </div>
+        </div>
+    </div>
+</div>
+</section> -->
+
+    <!-- Projects #1 -->
+    <section id="projects">
+        <p class=section__text__p1>Browse my creative</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video src="./Assets/trident.mp4" controls alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fresh Vibes Fest Aftermovie</h2>
+                    <div>
+                        <p class="section__text__p3">
+
+                            The afterevent video of Fresh Vibes Fiesta captured the event concept,
+                            which was a kaleidoscope of energy and celebration. This creation blended dynamic
+                            motion graphics, fluid transitions, and bold typography. Collaboration and iterative
+                            refinement ensured a visually stunning experience, perfectly reflecting the festival's
+                            spirit.
+                        </p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video src="Assets/howto.mp4" controls alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">"How To Listen to This Album" Music Video</h2>
+                    <div>
+                        <p class="section__text__p3">
+                            The animation for "How to Listen to This Album" by Stereoclip embraced the song's
+                            introspective journey.
+                            I fused mesmerizing visuals with emotive storytelling,
+                            guiding viewers through surreal and cosmics landscapes. resulting in a visually captivating
+                            experience that echoed the song's melodic depth and emotional resonance. </p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video src="./Assets/poster.mp4" controls alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Haven Fest Posters</h2>
+                    <div>
+                        <p class="section__text__p3">"Haven Fest's" posters seamlessly merges design and music, with
+                            lines in motion symbolizing the dynamic flow of sound and creativity. I crafted dynamic
+                            visuals intertwining with the rhythm of the beats, creating an immersive experience.
+                            Collaboration ensured a captivating fusion,
+                            echoing the festival's spirited convergence of artistry and melody.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Projects #2 -->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/brand.jpg" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Costafe Brand book</h2>
+                    <div>
+                        <p class="section__text__p3"> Crafting this brand book was a creative journey where every
+                            element had to reflect the essence of Costafe.
+                            I started by immersing ourselves in the company's spirit, carefully selecting colors and
+                            designing a layout inspired by the elegance of a coffee cup.
+                            The result? A visual manifesto that embodies Costafe's passion for great coffee.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/pixi.jpg" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pixie's Article Layout</h2>
+                    <div>
+                        <p class="section__text__p3">
+
+                            Designing the Pixies' article layout was a vibrant journey. Bright colors infused each page
+                            with energy, reflecting the band's dynamic presence. Inspired by their iconic style, I
+                            crafted a layout that celebrated their music, blending bold imagery with sleek typography.
+                        </p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/uke.jpg" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Ukelele's guide card holder</h2>
+                    <div>
+                        <p class="section__text__p3"> I designed this ukulele card case to be as useful as it is vibrant. It started with a desire to create a solution for 
+                            the loose and disorganized guide cards.  I explored bold color palettes, aiming to transform the case into a visual reference system.  Each hue acts as a cue, helping players quickly identify the chord they need. The result? 
+                            A functional design that injects a touch of joy into every practice session.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects #3 -->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/costafe.png" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Marketing Campaign Costafe</h2>
+                    <div>
+                        <p class="section__text__p3">
+                            This project involved crafting a multi-platform marketing campaign for a coffee brand. 
+                            I aimed to reflect a cohesive brand identity across email, apparel, and social media. The email campaign, for instance, featured imagery that mirrored the promo item designs, while social 
+                            media posts used playful graphics to engage followers and promote the brand's story.
+                        </p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/madre.png" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">"La Madremonte" Children's book</h2>
+                    <div>
+                        <p class="section__text__p3">This project involved creating the layout for a children's book focused on environmental responsibility.
+                             My goal was to visually support the story's message of caring for nature.  Green, in all its various shades, became the hero of the colour palette. This colour scheme served as a constant reminder of the beauty and importance of the natural world. 
+                            The layout itself was designed to be engaging to young readers, subtly reinforcing the story's 
+                            message through the use of colour.</p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/opalo.png" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Opalo Houses Booklet</h2>
+                    <div>
+                        <p class="section__text__p3">This project involved crafting a booklet designed to 
+                            showcase some properties for sale.  I prioritized a balance between elegance and 
+                            information density. Clean, modern layouts with ample white space allowed the renders of each property to take center stage.  
+                            A clear colour-coding system differentiated property types, while strategically placed call-to-action elements.  The result was a visually compelling and user-friendly 
+                            booklet that entices readers to explore their dream property.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Project #4 -->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/ux.jpg" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Dairy Drop UX experience Design</h2>
+                    <div>
+                        <p class="section__text__p3">
+                            Conducting UX research for sustainable milk delivery was an enriching journey. 
+                            From crafting personas to prototyping, each step aimed to enhance user experience 
+                            while respecting and integrating brand guidelines. Delving into user needs guided every decision, 
+                            ensuring a seamless and eco-conscious delivery system. The result is a solution that reflects the 
+                            companie's commitment to sustainability, 
+                            user-centered design, and brand integrity.</p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Acicom.png" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Annals of Acicom</h2>
+                    <div>
+                        <p class="section__text__p3">Designing the layout for the congress memory books was a 
+                            delicate balance between bright colors and a scholarly feel. I opted for clean lines and elegant design, 
+                            infusing just the right amount of vibrancy to keep it engaging yet dignified. Each page exudes an academic aura, while pops of color add a touch of liveliness, 
+                            resulting in a series of books that strike the perfect harmony between intellect and visual appeal.</p>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/bike.png" alt="project1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Two-Way Magazine Layout</h2>
+                    <div>
+                        <p class="section__text__p3">Crafting the layout for the biking magazine was a journey through bohemian and eclectic vibes. 
+                            I aimed for a blend of laid-back charm and urban chic, infusing the pages with vibrant colors and whimsical typography. 
+                            Each spread exudes a free-spirited energy, inviting readers on a stylish cycling adventure.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" alt="email icon" class="icon contact-icon" />
+                <p><a href="mailto:pauquinc@gmail.com">pauquinc@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
+                <p><a href='https://www.linkedin.com/in/pauquinc/'>LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Paula Quintero</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
